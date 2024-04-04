@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<div class="box">
+		<h2>Sign Up for Our Gaming Website</h2>
+		<form id="signupForm">
+			<a for="name">Name:</a>
+			<input type="text" id="name" name="name" required>
+            
+			<a for="username">Preferred Username:</a>
+			<input type="text" id="username" name="username" required>
+            
+			<a for="password">Password:</a>
+			<input type="password" id="password" name="password" required>
+            
+			<a for="confirmPassword">Confirm Password:</a>
+			<input type="password" id="confirmPassword" name="confirmPassword" required>
+            
+			<a for="email">Email:</a>
+			<input type="email" id="email" name="email" required>
+            
+			<a for="address">Address:</a>
+			<textarea id="address" name="address" required></textarea>
+            
+			<a for="interests">Interests:</a>
+			<textarea id="interests" name="interests" required></textarea>
+
+			<div class="buttons">
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+			</div>
+		</form>
+	</div>
+</body>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-image: url('https://cdn.akamai.steamstatic.com/steam/apps/1962663/header.jpg?t=1712172838') ;
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.box {
+	max-width: 600px;
+	margin: 50px auto;
+	background-color: #505050;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	text-align: center;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+a {
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.buttons {
+	grid-column: span 2;
+	text-align: center;
+}
+
+button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #007bff;
+	color: #fff;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+</html>
